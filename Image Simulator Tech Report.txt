@@ -1,0 +1,34 @@
+Image Simulator Technical Report
+
+
+
+[Title]: Image Simulator
+
+[Developer]: Kyla Moore
+
+[Inspirations]: Photoshop, 3dthis.com, Pixlr, PixilArt, “Cart Ride into My Face”
+
+
+[Controls]: Use S&D keys to move side to side, Use W&S keys to move up and down, Use mouse scroll to move back and forth, Click and drag to to rotate camera (limited between -30 to 30 degrees). 
+
+[How to Use]: Get the file path of an image and copy and paste into the input box. Upon entering path choose the depth option using the slider and click “Generate” If the file path you provided is wrong or invalid a question mark icon will be displayed. If the image was found successfully the program may freeze for about a minute to process and an icon of your image will be displayed on screen. Once the cube map is generated click on the effect panels to open/close them and use the sliders seen to choose your effect intensities. Click the submit button below to have the program apply the effects you chose to the cubes. Use the reset button to bring the cube generation back to its original look. If your camera gets in a weird/uncomfortable spot you can click the reset camera button to set its position and orientation.
+
+
+[Introduction]: The Image N Wave simulator allows its user to import image files into the program and generate a cubed simulation of the pixels. In addition the program provides a set of effects to modify the colorization of the generation. Using the provided camera controls, users can take an in depth at the formation of the cube structure of the image to get a better understanding on how pixels function.
+
+[Approach]: Prompt the user for a file path. Read and save information about the pixels of the image. Display the cubes that equipped with color information and place them in the world accordingly. Using the provided UI, the program interprets the info given by the user and process the all the cubes to modify the colorization.
+
+[Results]: The approach was widely successful. The colorization modifications work as intended. The camera works appropriately. The GUI works flawlessly. Unfortunately the program can only handle small images as cube rendering has turned out to be very processing heavy. The details effects had to be cancelled as the information to do those is too scarce and complex to accomplish at the moment. I attempted to use a concept called static batching to improve efficiency however seems Unity seems to be ignoring the method call to do the operation in the programming.
+
+[Conclusions]: Images are far better off represented in 2D pixels than rendering cubes. Image processing is difficult to get the information to do and some of the math behind it is complicated. This project proved to be a good educative lesson on Unity as a whole. 
+
+[Future Work]: Find information for visualizing waves and implement processing techniques into the program. Find a way to make the program work more efficiently.
+
+
+The project is intended towards anyone who wishes to see a 3D imitation of a small digital image they have on their computer. The tasks of the program include importing the file path of an image, applying effects, and moving a camera around the cube generation. The visualization is useful for experimenting with RGB settings of an image and even demonstrates a lesson on the complexity of digital pictures. The system is a rookie compared to other work but is a good introduction attempt. 
+
+The program can be very complex and processing heavy=>slow, the program does produce good quality results in its cube generations. The program relies on array lists and for loops to evaluate digital images and process cube generations. The problem the program works to solve is very cliche and can be seen demonstrated in any image processor, however unlike the typical processor this program generates 3D imitation. Overall producing this program involved hours of research on web forums, manual documents, info pages, and observations on digital images.
+
+
+See demo video of the program here: 
+https://drive.google.com/drive/folders/1eVk99WDL58m0zE6VGF6tVaL8AzeC7S7U
